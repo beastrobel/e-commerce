@@ -22,12 +22,10 @@ router.get('/:id', (req, res) => {
   where: {
     id: req.params.id
   }
-})
-.then((category) => {
-  res.json(category);
-});
-  // find one category by its `id` value
-  // be sure to include its associated Products
+  })
+  .then((category) => {
+    res.json(category);
+  });
 });
 
 router.post('/', (req, res) => {
