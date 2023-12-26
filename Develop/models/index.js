@@ -13,19 +13,13 @@ Category.hasMany(Product, {
   onDelete: 'CASCADE'
 });
 
-Product.belongsToMany(Tag, {
-  through: {
-    model: ProductTag,
-    unique: false,
-  }
-});
+Product.belongsToMany(Tag, 
+  { through: ProductTag }
+);
 
-Tag.belongsToMany(Product, {
-  through: {
-    model: ProductTag,
-    unique: false,
-  }
-});
+Tag.belongsToMany(Product, 
+  { through: ProductTag }
+);
 
 module.exports = {
   Product,
