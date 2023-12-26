@@ -13,6 +13,7 @@ To use the e-commerce application, you will need to install express.js, dotenv, 
 ## Usage
 
 The video below demonstrates the e-commerce application's functionality.
+[ecommerce.webm](https://github.com/beastrobel/e-commerce/assets/137853377/08eb8d07-1c05-4cfc-8428-2f158f06f7ed)
 
 
 ## Contributing
